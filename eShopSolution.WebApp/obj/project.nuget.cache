@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "phh4zwtx2U39wcB8OUKw0S54Z8KnvnLSF6RG85YNiaJpiEEfoTIOWR9ef7EuRQrHjhHPz7YrI78NatpSvAEw0Q==",
+  "success": true,
+  "projectFilePath": "D:\\.NetCore\\eShopSolution\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MSI FPT\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
