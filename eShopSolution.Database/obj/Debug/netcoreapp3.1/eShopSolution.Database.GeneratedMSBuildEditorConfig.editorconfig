@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = eShopSolution.Database
+build_property.ProjectDir = D:\.NetCore\eShopSolution\eShopSolution.Database\
