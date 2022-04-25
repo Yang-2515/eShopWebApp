@@ -1,0 +1,33 @@
+﻿.bg-color-pink {
+    border: 0;
+    background-color: rgb(251, 182, 182);
+}
+
+.bg-color-lightpink {
+    background-color: rgb(254, 236, 236) !important;
+}
+.bg-color-pinkdanger {
+    border: 0;
+    background-color: rgb(255, 128, 128);
+}
+.bg-color-pinkdanger-hover:hover, .bg-color-pinkdanger-hover:active, .bg-color-pinkdanger-hover:focus {
+    border: 0 !important;
+    background-color: rgb(255, 179, 179) !important;
+}
+.bg-color-infosuccess {
+    border: 0;
+    background-color: rgb(57, 198, 198);
+}
+.bg-color-info-hover:hover, .bg-color-info-hover:active, .bg-color-info-hover:focus {
+    border: 0 !important;
+    background-color: rgb(175, 233, 233) !important;
+}
+.ele-hover:hover {
+    background-color: rgb(250, 158, 158);
+}
+.ele-hover-opacity:hover{
+    opacity:0.5;
+}
+.ele-hover-black:hover {
+    color: rgb(255, 153, 153) !important;
+}
