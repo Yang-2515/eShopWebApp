@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Login";
+}
+@section css{
+<environment include="Development">
+    <link rel="stylesheet" href="~/css/Home.css" type="text/css" media="all" asp-append-version="true" />
+</environment>
+}
+<form class="container w-50 mt-5">
+    <div class="mb-3">
+        <label for="Username" class="form-label">Username</label>
+        <input class="form-control w-75" id="Username">
+    </div>
+    <div class="mb-3">
+        <label for="Password" class="form-label">Password</label>
+        <input type="password" class="form-control w-75" id="Password">
+    </div>
+    <button type="submit" class="btn btn-primary mx-2 bg-color-pink ele-hover">Login</button>
+    <button type="submit" class="btn btn-secondary mx-2">Back</button>
+</form>
