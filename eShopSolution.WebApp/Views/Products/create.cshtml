@@ -1,0 +1,41 @@
+﻿@using eShopSolution.WebApp.Models.Products.Schemas
+@model Product
+@{
+    ViewData["Title"] = "CreateProduct";
+}
+<div class="container">
+    <div class="row ">
+        <h1 class="text-center text-info">Create Product</h1>
+    </div>
+    <form asp-controller="Products" asp-action="insert">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input asp-for="Name" class="form-control" id="Name" value="@Model.Name">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="Price" class="form-label">Price</label>
+            <input asp-for="Price" class="form-control" id="Price" value="@Model.Price">
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="OriginalPrice" class="form-label">OriginalPrice</label>
+            <input asp-for="OriginalPrice" class="form-control" id="OriginalPrice" value="@Model.OriginalPrice">
+            <span asp-validation-for="OriginalPrice" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="ViewCount" class="form-label">ViewCount</label>
+            <input asp-for="ViewCount" class="form-control" id="ViewCount" value="@Model.ViewCount">
+            <span asp-validation-for="ViewCount" class="text-danger"></span>
+        </div>
+        <div class="text-center ">
+            <div class="w-25 btn-group">
+                <input class="btn btn-success mx-2" type="submit" name="submit" value="Save" />
+                <a asp-action="getAll" asp-controller="Products" class="btn btn-secondary mx-2">
+                    <i class="fas fa-edit">Back</i>
+                </a>
+            </div>
+        </div>
+    </form>
+</div>

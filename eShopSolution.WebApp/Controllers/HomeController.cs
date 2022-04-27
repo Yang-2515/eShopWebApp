@@ -22,6 +22,10 @@ namespace eShopSolution.WebApp.Controllers
         {
             return View();
         }
+        public IActionResult UserPage()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

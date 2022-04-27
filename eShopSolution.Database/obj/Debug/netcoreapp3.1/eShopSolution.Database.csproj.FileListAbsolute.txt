@@ -1,0 +1,13 @@
+D:\.NetCore\eShopSolution\eShopSolution.Database\bin\Debug\netcoreapp3.1\eShopSolution.Database.deps.json
+D:\.NetCore\eShopSolution\eShopSolution.Database\bin\Debug\netcoreapp3.1\eShopSolution.Database.runtimeconfig.json
+D:\.NetCore\eShopSolution\eShopSolution.Database\bin\Debug\netcoreapp3.1\eShopSolution.Database.runtimeconfig.dev.json
+D:\.NetCore\eShopSolution\eShopSolution.Database\bin\Debug\netcoreapp3.1\eShopSolution.Database.dll
+D:\.NetCore\eShopSolution\eShopSolution.Database\bin\Debug\netcoreapp3.1\eShopSolution.Database.pdb
+D:\.NetCore\eShopSolution\eShopSolution.Database\obj\Debug\netcoreapp3.1\eShopSolution.Database.csproj.AssemblyReference.cache
+D:\.NetCore\eShopSolution\eShopSolution.Database\obj\Debug\netcoreapp3.1\eShopSolution.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NetCore\eShopSolution\eShopSolution.Database\obj\Debug\netcoreapp3.1\eShopSolution.Database.AssemblyInfoInputs.cache
+D:\.NetCore\eShopSolution\eShopSolution.Database\obj\Debug\netcoreapp3.1\eShopSolution.Database.AssemblyInfo.cs
+D:\.NetCore\eShopSolution\eShopSolution.Database\obj\Debug\netcoreapp3.1\eShopSolution.Database.csproj.CoreCompileInputs.cache
+D:\.NetCore\eShopSolution\eShopSolution.Database\obj\Debug\netcoreapp3.1\eShopSolution.Database.dll
+D:\.NetCore\eShopSolution\eShopSolution.Database\obj\Debug\netcoreapp3.1\eShopSolution.Database.pdb
+D:\.NetCore\eShopSolution\eShopSolution.Database\obj\Debug\netcoreapp3.1\eShopSolution.Database.genruntimeconfig.cache
