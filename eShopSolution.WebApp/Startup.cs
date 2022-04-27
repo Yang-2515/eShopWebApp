@@ -1,6 +1,13 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using eShopSolution.Database;
+using eShopSolution.WebApp.Models.Login;
+using eShopSolution.WebApp.Models.Products;
+using eShopSolution.WebApp.Models.Signup;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -19,11 +26,18 @@ namespace eShopSolution.WebApp
         }
 
         public IConfiguration Configuration { get; }
+        //public ILifetimeScope AutofacContainer { get; private set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<eShopContext>(options =>
+            options.UseSqlServer(
+                Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<IProductsModel, ProductsModel>();
+            services.AddScoped<ISignupModel, SignupModel>();
+            services.AddScoped<ILoginModel, LoginModel>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +56,7 @@ namespace eShopSolution.WebApp
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -51,7 +66,8 @@ namespace eShopSolution.WebApp
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+            }); // trang hien ra dau tien khi tai web
+
         }
     }
 }
