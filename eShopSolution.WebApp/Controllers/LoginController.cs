@@ -19,11 +19,12 @@ namespace eShopSolution.WebApp.Controllers
         {
             return View();
         }
+        [HttpPost]
         public async Task<IActionResult> checkLogin(UserLogin userLogin)
         {
             if (await _loginModel.checkLogin(userLogin))
             {
-                return RedirectToAction("UserPage", "Home");
+                return RedirectToActionPreserveMethod("UserPage","Home",userLogin.username, "true");
             }
             return View("Index");
         }

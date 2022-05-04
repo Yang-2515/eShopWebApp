@@ -19,6 +19,7 @@ namespace eShopSolution.WebApp.Controllers
         {
             return View();
         }
+        [HttpPost]
         public async Task<IActionResult> signup(User user)
         {
 

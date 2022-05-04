@@ -1,4 +1,5 @@
 ﻿using eShopSolution.WebApp.Models;
+using eShopSolution.WebApp.Models.Login.Schemas;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -22,9 +23,10 @@ namespace eShopSolution.WebApp.Controllers
         {
             return View();
         }
-        public IActionResult UserPage()
+        [HttpPost]
+        public IActionResult UserPage(string username)
         {
-            return View();
+            return View("~/Views/Home/User/UserPage.cshtml", username);
         }
 
         public IActionResult Privacy()
