@@ -7,7 +7,7 @@
     <div class="row ">
         <h1 class="text-center text-info">Create Product</h1>
     </div>
-    <form asp-controller="Products" asp-action="insert">
+    <form asp-controller="Products" asp-action="insert" method="post">
         <div asp-validation-summary="ModelOnly"></div>
         <div class="mb-3">
             <label for="Name" class="form-label">Name</label>

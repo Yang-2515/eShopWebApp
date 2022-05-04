@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="~/css/Home.css" type="text/css" media="all" asp-append-version="true" />
     </environment>
 }
-<form class="container w-50 mt-5" asp-action="checkLogin" asp-controller="Login">
+<form class="container w-50 mt-5" asp-action="checkLogin" asp-controller="Login" method="post">
     <div class="mb-3">
         <label for="Username" class="form-label">Username</label>
         <input asp-for="username" class="form-control w-75" id="Username">

@@ -27,6 +27,7 @@ namespace eShopSolution.WebApp.Controllers
             }
             return View("update", await _productsModel.loadProduct(id));
         }
+        [HttpPost]
         public async Task<IActionResult> insert(Product product)
         {
             if (ModelState.IsValid)
